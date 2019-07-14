@@ -14,11 +14,10 @@ public class Basic {
 	public void tst1() {
 
 		// TODO Auto-generated method stub
-		RestAssured.baseURI = "https://staging1.moveinsync.com";
-		given().when().get("mis-security-dashboard/safe-drop/configuration/preprod-Test2").then().assertThat()
+		RestAssured.baseURI = "https://jsonplaceholder.typicode.com/";
+		given().when().get("posts/1").then().assertThat()
 				.statusCode(200).and().contentType(ContentType.JSON).and()
-				.body("enableAudioVisualAndToastNotification", equalTo(false)).and().
-				header("Server", "Apache-Coyote/1.1");
+				.body("userId", equalTo(1));
 
 	}
 
