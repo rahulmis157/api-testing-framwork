@@ -1,12 +1,14 @@
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
+package com.test.api;
+
+import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 import org.testng.annotations.Test;
 
-import static io.restassured.RestAssured.given;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 
-public class basic {
+public class Basic {
 	
 	@Test
 	public void tst1() {
