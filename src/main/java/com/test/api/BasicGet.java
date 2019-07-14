@@ -8,10 +8,10 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 
-public class Basic {
+public class BasicGet {
 	
 	@Test
-	public void tst1() {
+	public void testingGet() {
 
 		// TODO Auto-generated method stub
 		RestAssured.baseURI = "https://jsonplaceholder.typicode.com/";
