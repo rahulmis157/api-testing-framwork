@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.test.api.BasicDelete" hash-for-method="delTest">delTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.test.api.CombinedTest" hash-for-method="Test_Delete">Test_Delete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.test.api.CombinedTest" hash-for-method="test_Get">test_Get</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.test.api.CombinedTest" hash-for-method="test_Post">test_Post</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +130,28 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.test.api.BasicDelete</span>
+              <span class="class-name">com.test.api.CombinedTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="delTest">
-                  </a> <!-- delTest -->
-                  <span class="method-name">delTest</span>
+                  <a name="Test_Delete">
+                  </a> <!-- Test_Delete -->
+                  <span class="method-name">Test_Delete</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_Get">
+                  </a> <!-- test_Get -->
+                  <span class="method-name">test_Get</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_Post">
+                  </a> <!-- test_Post -->
+                  <span class="method-name">test_Post</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +159,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse--1297008910/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse-1154824729/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +168,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.test.api.BasicDelete&quot;/&gt;
+      &lt;class name=&quot;com.test.api.CombinedTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -184,16 +208,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'delTest')
-data.setCell(0, 2, 'com.test.api.BasicDelete')
-data.setCell(0, 3, 2366);
+data.setCell(0, 1, 'Test_Delete')
+data.setCell(0, 2, 'com.test.api.CombinedTest')
+data.setCell(0, 3, 2218);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test_Post')
+data.setCell(1, 2, 'com.test.api.CombinedTest')
+data.setCell(1, 3, 1030);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test_Get')
+data.setCell(2, 2, 'com.test.api.CombinedTest')
+data.setCell(2, 3, 634);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -219,10 +251,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.test.api.BasicDelete</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">delTest</span>
+              <div class="chronological-class-name">com.test.api.CombinedTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">getData</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">Test_Delete</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_Get</span>
+                <span class="method-start">2237 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_Post</span>
+                <span class="method-start">2873 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
