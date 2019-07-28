@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.test.api.BasicDelete">
+      <class name="com.test.api.BasicPOSTGET">
         <methods>
-          <include name="delTest"/>
+          <include name="postGetRequest"/>
         </methods>
-      </class> <!-- com.test.api.BasicDelete -->
+      </class> <!-- com.test.api.BasicPOSTGET -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
