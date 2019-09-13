@@ -30,7 +30,7 @@ public class BasicGet {
 
 		// TODO Auto-generated method stub
 		RestAssured.baseURI = prop.getProperty("HOST");
-		given().when().get(prop.getProperty("GET_ENDPOINT")).then().assertThat()
+		given().log().all().when().get(prop.getProperty("GET_ENDPOINT")).then().assertThat()
 				.statusCode(200).and().contentType(ContentType.JSON).and()
 				.body("userId", equalTo(1));
 

@@ -30,7 +30,7 @@ import io.restassured.path.json.mapper.factory.GsonObjectMapperFactory;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
 
-public class BasicPost {
+public class BasicPostCSV {
 	static final String CSV_FILENAME = "/home/rahul/Documents/api-test-project/api-testing-framwork/src/main/java/com/test/api/resource/userdata.csv";
 
 	Properties prop = new Properties();
@@ -45,6 +45,7 @@ public class BasicPost {
 	@Test
 	public void testingPost() throws FileNotFoundException, IOException {
 
+		
 		User u = getTestUser();
 		Gson gson = new Gson();
 		// TODO Auto-generated method stub
@@ -58,6 +59,7 @@ public class BasicPost {
 		JsonPath jsonpth = new JsonPath(res.asString());
 		boolean f = jsonpth.get("title").equals("foo");
 		System.out.println("checking " + f);
+	
 
 	}
 
